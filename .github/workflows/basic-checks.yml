@@ -16,8 +16,7 @@ jobs:
       - name: Verify project structure
         run: |
           test -f README.md
-          test -f Experts/ForexScalperBridge/ForexScalperBridge.mq5
-          test -f Experts/ForexScalperBridge/README.md
+          test -f ForexScalperBridge.mq5
 
       - name: Check Markdown formatting
         run: git diff --check
