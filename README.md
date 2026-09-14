@@ -1,4 +1,4 @@
-# ForexScalperBridge
+# orva-mt5-bridge
 
 > A MetaTrader 5 market-data bridge that captures broker-native ticks,
 > candles, account details, symbol specifications, and open positions, then
