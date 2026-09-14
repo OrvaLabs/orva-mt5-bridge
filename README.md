@@ -1,5 +1,9 @@
 # ForexScalperBridge
 
+> A MetaTrader 5 market-data bridge that captures broker-native ticks,
+> candles, account details, symbol specifications, and open positions, then
+> delivers them to a backend over HTTP or TCP.
+
 ![ForexScalperBridge in MetaEditor](https://github.com/user-attachments/assets/c57f858b-820a-4499-9138-1cb073add29c)
 
 `ForexScalperBridge` is the MetaTrader 5 (MT5) Expert Advisor module that

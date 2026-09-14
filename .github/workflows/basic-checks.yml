@@ -1,0 +1,23 @@
+name: Basic Checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  repository-checks:
+    name: Repository checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify project structure
+        run: |
+          test -f README.md
+          test -f Experts/ForexScalperBridge/ForexScalperBridge.mq5
+          test -f Experts/ForexScalperBridge/README.md
+
+      - name: Check Markdown formatting
+        run: git diff --check
